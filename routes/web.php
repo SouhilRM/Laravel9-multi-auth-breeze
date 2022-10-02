@@ -10,7 +10,9 @@ use App\Http\Controllers\Home\AdminController;
 
 Route::controller(AdminController::class)->group(function(){
     
-    Route::get('/login','Index')->name('login_from');
+    Route::get('/admin/login','Index')->name('login_from');
+
+    Route::get('/admin/dashboard','Dashboard')->name('admin.dashboard');
 });
 
 /* ---------------------------------- Admin Route ------------------------------- */
